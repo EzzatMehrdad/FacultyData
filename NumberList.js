@@ -5,12 +5,9 @@ var getName= function(employee)
 }
 
 
-d3.select("body")
-.append("div")
-.selectAll("ol")
+d3.select("ol")
+.selectAll("li")
 .data(employees)
 .enter()
-.append("ol")
 .append("li")
-.style("type", 1)
 .text(getName);
